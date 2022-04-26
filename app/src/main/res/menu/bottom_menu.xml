@@ -3,17 +3,17 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/miLocation"
-        android:icon="@drawable/ic_location"
+        android:icon="@drawable/select_location"
         tools:ignore="MenuTitle" />
 
     <item
-        android:id="@+id/miFoodMenu"
-        android:icon="@drawable/ic_food_menu"
+        android:id="@+id/miOrderMenu"
+        android:icon="@drawable/select_order_menu"
         tools:ignore="MenuTitle" />
 
     <item
         android:id="@+id/miAccount"
-        android:icon="@drawable/ic_account"
+        android:icon="@drawable/select_account"
         tools:ignore="MenuTitle" />
 
 </menu>
