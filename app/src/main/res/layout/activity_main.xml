@@ -1,61 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:paddingEnd="8dp"
-        android:paddingStart="1dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:background="@drawable/ic_background_toolbar"
+        android:paddingStart="1dp"
+        android:paddingEnd="8dp"
         app:layout_constraintBottom_toTopOf="@id/nav_container"
-        app:logo="@drawable/ic_toolbar_location"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:logo="@drawable/ic_toolbar_location"
         app:menu="@menu/toolbar_menu">
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
-                <Spinner
-                    android:id="@+id/orderPlace"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="11"
-                    android:backgroundTint="@color/white"
-                    android:entries="@array/orderPlacesSpinner" />
+            <Spinner
+                android:id="@+id/orderPlace"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="11"
+                android:backgroundTint="@color/white"
+                android:entries="@array/orderPlacesSpinner" />
 
         </LinearLayout>
 
     </androidx.appcompat.widget.Toolbar>
 
-
+    <TableLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
 
     <FrameLayout
         android:id="@+id/nav_container"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@id/bottom_navigation"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/toolbar"
-        app:layout_constraintVertical_bias="1.0" />
+        android:layout_weight="7"
+        android:background="#F2F3F8"/>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:menu="@menu/bottom_menu" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
