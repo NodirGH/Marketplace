@@ -4,6 +4,7 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="search">Search</string>
     <string name="qr_search">QR search</string>
+    <string name="_20_30_min">20–30\n min</string>
 
     <string-array name="orderPlacesSpinner">
         <item>Moskva kalxoz</item>

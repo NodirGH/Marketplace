@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".splash.BaseHallScreen3Fragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:background="@color/blue_button"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/word_base_hall" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        android:layout_weight="5">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvBaseHall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="0dp"
+                android:fontFamily="@font/font_sf_pro_bold"
+                android:text="BaseHall"
+                android:textColor="#333333"
+                android:textSize="34sp" />
+
+
+            <TextView
+                android:id="@+id/tvBaseHallInfoScreen3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/btnTimeToStartOrdering"
+                android:layout_below="@+id/tvBaseHall"
+                android:layout_marginTop="23dp"
+                android:layout_marginBottom="32dp"
+                android:fontFamily="@font/font_sf_pro_regular"
+                android:text="Welcome to BaseHall. Order now from a diverse range of cuisines for collection at the Jardine House food hall."
+                android:textColor="#666666"
+                android:textSize="21sp" />
+
+            <Button
+                android:id="@+id/btnTimeToStartOrdering"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:background="@drawable/rounded_button"
+                android:paddingStart="80dp"
+                android:paddingEnd="80dp"
+                android:text="Time to start ordering"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

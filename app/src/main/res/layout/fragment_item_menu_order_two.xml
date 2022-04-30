@@ -10,7 +10,7 @@
     android:focusable="true"
     app:cardCornerRadius="12dp"
     app:cardElevation="3dp"
-    tools:context=".ItemMenuOrderFragment">
+    tools:context=".ItemMenuOrderTwoFragment">
 
     <RelativeLayout
         android:layout_width="match_parent"
