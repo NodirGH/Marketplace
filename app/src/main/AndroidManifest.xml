@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Marketplace">
-        <activity android:name=".splash.Splash"
+        <activity android:name=".MainActivity"
             android:theme="@style/SplashScreenTheme"
             android:exported="true">
             <intent-filter>
@@ -19,12 +19,12 @@
             </intent-filter>
 
         </activity>
-        <activity
-            android:name=".MainActivity"
-            android:exported="true"
-            android:theme="@style/Theme.Marketplace">
+<!--        <activity-->
+<!--            android:name=".MainActivity"-->
+<!--            android:exported="true"-->
+<!--            android:theme="@style/Theme.Marketplace">-->
 
-        </activity>
+<!--        </activity>-->
     </application>
 
 </manifest>

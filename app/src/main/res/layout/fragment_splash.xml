@@ -3,14 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".splash.MainSplashFragment">
+    tools:context=".splash.SplashFragment">
 
     <ImageView
-        android:id="@+id/ivMainSplashPicture"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:src="@drawable/main_splash"
         android:scaleType="centerCrop"/>
-
 
 </FrameLayout>
