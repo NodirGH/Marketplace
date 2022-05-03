@@ -9,10 +9,11 @@ import android.widget.Spinner
 import android.widget.Toast
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.fragment_test.*
 
 class FoodMenuLauncherFragment : Fragment() {
 
-//    private lateinit var currentFragment: Fragment
+    private lateinit var currentFragment: Fragment
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
