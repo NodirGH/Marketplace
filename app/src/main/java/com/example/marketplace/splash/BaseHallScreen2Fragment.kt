@@ -8,7 +8,6 @@ import android.view.ViewGroup
 import androidx.viewpager2.widget.ViewPager2
 import com.example.marketplace.R
 import kotlinx.android.synthetic.main.fragment_base_hall_screen2.view.*
-import kotlinx.android.synthetic.main.fragment_basehall_screen1.view.*
 
 class BaseHallScreen2Fragment : Fragment() {
 

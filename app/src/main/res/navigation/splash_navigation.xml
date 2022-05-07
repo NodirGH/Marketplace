@@ -33,7 +33,7 @@
     </fragment>
     <fragment
         android:id="@+id/testFragment"
-        android:name="com.example.marketplace.TestFragment"
+        android:name="com.example.marketplace.FoodMenuMainLauncherFragment"
         android:label="fragment_test"
-        tools:layout="@layout/fragment_test" />
+        tools:layout="@layout/fragment_food_menu_main_launcher" />
 </navigation>
