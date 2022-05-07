@@ -5,10 +5,15 @@ import android.view.*
 import android.widget.*
 import androidx.fragment.app.Fragment
 import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.FragmentManager
+import com.example.marketplace.databinding.ActivityMainBinding
+import com.example.marketplace.databinding.FragmentFoodMenuMainLauncherBinding
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.google.android.material.tabs.TabLayoutMediator
+import kotlinx.android.synthetic.main.fragment_food_menu_main_launcher.*
 
-class TestFragment : Fragment() {
-
+class FoodMenuMainLauncherFragment : Fragment() {
+    private lateinit var binding: FragmentFoodMenuMainLauncherBinding
     private lateinit var currentFragment: Fragment
 
     override fun onCreateView(
@@ -16,9 +21,9 @@ class TestFragment : Fragment() {
         savedInstanceState: Bundle?
 
     ): View? {
-        val view = inflater.inflate(R.layout.fragment_test, container, false)
+        val view = inflater.inflate(R.layout.fragment_food_menu_main_launcher, container, false)
 
-        parentFragmentManager.beginTransaction().replace(R.id.nav_container, FoodMenuFragment())
+        parentFragmentManager.beginTransaction().replace(R.id.flFoodMenu, FoodMenuFragment())
             .commit()
 
         (activity as AppCompatActivity).supportActionBar
@@ -51,6 +56,7 @@ class TestFragment : Fragment() {
             override fun onNothingSelected(p0: AdapterView<*>?) {
             }
         }
+
         return view
     }
 
@@ -66,24 +72,8 @@ class TestFragment : Fragment() {
                 currentFragment = AccountFragment()
             }
         }
-        parentFragmentManager.beginTransaction().replace(R.id.nav_container, currentFragment)
+        parentFragmentManager.beginTransaction().replace(R.id.flFoodMenu, currentFragment)
             .commit()
         true
-    }
-
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        when (item.itemId) {
-            R.id.miQRScanner -> Toast.makeText(
-                activity,
-                "QR scanner is clicked",
-                Toast.LENGTH_SHORT
-            ).show()
-            R.id.miSearch -> Toast.makeText(
-                activity,
-                "Search is clicked",
-                Toast.LENGTH_SHORT
-            ).show()
-        }
-        return true
     }
 }
