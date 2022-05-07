@@ -5,6 +5,12 @@
     <string name="search">Search</string>
     <string name="qr_search">QR search</string>
     <string name="_20_30_min">20–30\n min</string>
+    <string name="OnBoardingBasehallTitle">BaseHall</string>
+    <string name="OnBoardingBasehallInfo">Welcome to BaseHall. Order now from a diverse range of cuisines for collection at the Jardine House food hall.</string>
+    <string name="OnBoardingDiversityTitle">Diversity</string>
+    <string name="OnBoardingDiversityInfo">The food hall provides diverse food for the office crowd and attracts the crowd to the center of the bar.</string>
+    <string name="OnBoardingTimeStartOrdering">Time to start ordering</string>
+    <string name="Next">Next</string>
 
     <string-array name="orderPlacesSpinner">
         <item>Moskva kalxoz</item>

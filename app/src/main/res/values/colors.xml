@@ -10,7 +10,7 @@
     <color name="upper_toolbar">#4C95FF</color>
     <color name="black_333333">#333333</color>
     <color name="grey_999999">#999999</color>
+    
 
-
-    <color name="blue_button">#4C95FF</color>
+    <color name="colorPrimary">#4C95FF</color>
 </resources>

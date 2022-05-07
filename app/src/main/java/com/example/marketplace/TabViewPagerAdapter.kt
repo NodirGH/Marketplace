@@ -7,7 +7,6 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.example.marketplace.databinding.FragmentViewPagerBinding
 import kotlinx.android.synthetic.main.items_view_pager.view.*
 
 class TabViewPagerAdapter{
