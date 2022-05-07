@@ -6,10 +6,11 @@
     tools:context=".onboarding.OnBoardingPageFragment">
 
     <ImageView
+        android:id="@+id/ivOnBoarding"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
-        android:src="@drawable/splash_screen1" />
+        android:src="@drawable/onboarding_diversity" />
 
 
     <LinearLayout

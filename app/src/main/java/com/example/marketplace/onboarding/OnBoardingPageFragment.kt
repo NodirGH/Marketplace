@@ -17,14 +17,17 @@ class OnBoardingPageFragment :
                 OnBoardingType.Diversity -> {
                     binding.tvTitle.text = getString(R.string.OnBoardingDiversityTitle)
                     binding.tvInfo.text = getString(R.string.OnBoardingDiversityInfo)
+                    binding.ivOnBoarding.setImageResource(R.drawable.onboarding_diversity)
                 }
                 OnBoardingType.BaseHall -> {
                     binding.tvTitle.text = getString(R.string.OnBoardingBasehallTitle)
                     binding.tvInfo.text = getString(R.string.OnBoardingBasehallInfo)
+                    binding.ivOnBoarding.setImageResource(R.drawable.onboarding_basehall)
                 }
                 OnBoardingType.Convenience -> {
                     binding.tvTitle.text = getString(R.string.OnBoardingBasehallTitle)
                     binding.tvInfo.text = getString(R.string.OnBoardingBasehallInfo)
+                    binding.ivOnBoarding.setImageResource(R.drawable.onboarding_diversity)
                 }
             }
         }
