@@ -2,10 +2,6 @@ package com.example.marketplace.onboarding
 
 import android.os.Bundle
 import android.view.View
-import android.view.ViewGroup
-import android.view.ViewGroup.LayoutParams.MATCH_PARENT
-import android.view.ViewGroup.LayoutParams.WRAP_CONTENT
-import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.constraintlayout.widget.ConstraintSet
 import androidx.navigation.fragment.findNavController
 import androidx.viewpager2.widget.ViewPager2
@@ -68,7 +64,7 @@ class OnBoardingFragment :
         })
         binding.btnAction.setOnClickListener {
             if (binding.vpOnBoarding.currentItem == adapter.itemCount - 1) {
-                findNavController().navigate(R.id.testFragment)
+                findNavController().navigate(R.id.menuFragment)
             } else {
                 binding.vpOnBoarding.currentItem = binding.vpOnBoarding.currentItem + 1
             }

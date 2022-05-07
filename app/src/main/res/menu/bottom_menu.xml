@@ -2,17 +2,17 @@
 <menu xmlns:tools="http://schemas.android.com/tools"
     xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/miLocation"
+        android:id="@+id/locationFragment"
         android:icon="@drawable/select_location"
         tools:ignore="MenuTitle" />
 
     <item
-        android:id="@+id/miOrderMenu"
+        android:id="@+id/foodMenuFragment"
         android:icon="@drawable/select_order_menu"
         tools:ignore="MenuTitle" />
 
     <item
-        android:id="@+id/miAccount"
+        android:id="@+id/accountFragment"
         android:icon="@drawable/select_account"
         tools:ignore="MenuTitle" />
 
