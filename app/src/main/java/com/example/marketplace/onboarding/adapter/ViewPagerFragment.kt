@@ -1,4 +1,4 @@
-package com.example.marketplace.splash.onboarding
+package com.example.marketplace.onboarding.adapter
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,9 +6,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.marketplace.R
-import com.example.marketplace.splash.BaseHallScreen1Fragment
-import com.example.marketplace.splash.BaseHallScreen2Fragment
-import com.example.marketplace.splash.BaseHallScreen3Fragment
+import com.example.marketplace.onboarding.BaseHallScreen1Fragment
+import com.example.marketplace.onboarding.BaseHallScreen2Fragment
+import com.example.marketplace.onboarding.BaseHallScreen3Fragment
 import kotlinx.android.synthetic.main.fragment_view_pager.view.*
 
 class ViewPagerFragment : Fragment() {

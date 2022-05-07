@@ -1,4 +1,4 @@
-package com.example.marketplace.splash
+package com.example.marketplace.onboarding
 
 import android.content.Context
 import android.os.Bundle

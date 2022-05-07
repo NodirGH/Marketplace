@@ -1,4 +1,4 @@
-package com.example.marketplace.splash.onboarding
+package com.example.marketplace.onboarding.adapter
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
