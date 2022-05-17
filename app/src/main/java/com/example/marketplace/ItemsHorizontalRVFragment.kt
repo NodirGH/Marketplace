@@ -6,7 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 
-class ItemMenuOrderFragment : Fragment() {
+class ItemsHorizontalRVFragment : Fragment() {
 
 
     override fun onCreate(savedInstanceState: Bundle?) {

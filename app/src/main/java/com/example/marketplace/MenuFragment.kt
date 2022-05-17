@@ -16,7 +16,7 @@ class MenuFragment : BaseFragment<FragmentMenuFragmentBinding>(FragmentMenuFragm
 
         binding.bottomNavigation.setupWithNavController(findNavController())
 
-        val adapter = ArrayAdapter(requireContext(), R.layout.spinner_color,  resources.getStringArray(R.array.orderPlacesSpinner))
+        val adapter = ArrayAdapter(requireContext(), R.layout.spinner_color, resources.getStringArray(R.array.orderPlacesSpinner))
         adapter.setDropDownViewResource(R.layout.dropdown_spinner_color)
         binding.spOrderPlace.adapter = adapter
 

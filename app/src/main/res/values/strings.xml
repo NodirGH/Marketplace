@@ -12,6 +12,7 @@
     <string name="OnBoardingTimeStartOrdering">Time to start ordering</string>
     <string name="Next">Next</string>
 
+
     <string-array name="orderPlacesSpinner">
         <item>Moskva kalxoz</item>
         <item>Navoiy kalxoz</item>

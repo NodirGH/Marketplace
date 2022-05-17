@@ -21,7 +21,7 @@ abstract class BaseActivity<VB : ViewBinding>(val inflater: (LayoutInflater) -> 
     val bindingSafe: VB?
         get() = if (isBindingInitialized()) binding else null
 
-    fun isBindingInitialized(): Boolean = ::binding.isInitialized
+    private fun isBindingInitialized(): Boolean = ::binding.isInitialized
     fun isBindingNotInitialized(): Boolean = !(::binding.isInitialized)
 
     lateinit var networkHandlerObserver: Observer<Throwable>

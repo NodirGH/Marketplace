@@ -3,33 +3,27 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".FoodMenuFragment"
-    android:background="#F2F3F8">
+    android:layout_height="wrap_content"
+    android:background="#FF0909">
 
     <TextView
-        android:id="@+id/tvTitleVerticalRV"
+        android:id="@+id/tvTitleRowItem"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="16sp"
-        android:fontFamily="@font/font_sf_pro_bold"
-        android:gravity="center"
-        android:text="Title vertical RV"
-        android:textColor="@color/black_333333"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        android:textColor="@color/white"
+        android:layout_margin="16dp"
         android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/mainRecycler"
+        android:id="@+id/cat_item_recycler"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:background="#392121"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvTitleVerticalRV" />
-
-
+        app:layout_constraintTop_toBottomOf="@+id/tvTitleRowItem" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,5 +1,6 @@
 package com.example.marketplace.onboarding
 
+import android.content.Context.MODE_PRIVATE
 import android.os.Bundle
 import android.view.View
 import com.example.marketplace.R
@@ -33,8 +34,15 @@ class OnBoardingPageFragment :
         }
     }
 
+    private fun onBoardingFinished() {
+        val sharedPref =  requireActivity().getSharedPreferences("onBoarding", MODE_PRIVATE)
+        val editor = sharedPref.edit()
+        editor.putBoolean("Finished", true)
+                editor.apply()
+    }
+
     companion object {
-        val KEY_TYPE = "type"
+        const val KEY_TYPE = "type"
         fun getInstance(type: OnBoardingType): OnBoardingPageFragment {
             val bundle = Bundle()
             bundle.putInt(KEY_TYPE, type.ordinal)

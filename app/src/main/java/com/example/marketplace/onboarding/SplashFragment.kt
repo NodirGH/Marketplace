@@ -2,7 +2,6 @@ package com.example.marketplace.onboarding
 
 import android.content.Context
 import android.os.Bundle
-import android.os.Handler
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -22,10 +21,10 @@ class SplashFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         lifecycleScope.launch {
-            delay(3000)
+            delay(1000)
             withContext(Dispatchers.Main) {
-                if (onBoardingFinished()) {
-                    findNavController().navigate(R.id.action_splashFragment2_to_testFragment)
+                if (isOnBoardingFinished()) {
+                    findNavController().navigate(R.id.action_splashFragment2_to_menuFragment)
                 } else {
                     findNavController().navigate(R.id.action_splashFragment2_to_viewPagerFragment)
                 }
@@ -34,7 +33,7 @@ class SplashFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_splash, container, false)
     }
 
-    private fun onBoardingFinished(): Boolean {
+    private fun isOnBoardingFinished(): Boolean {
         val sharedPref = requireActivity().getSharedPreferences("OnBoarding", Context.MODE_PRIVATE)
         return sharedPref.getBoolean("Finished", false)
     }
