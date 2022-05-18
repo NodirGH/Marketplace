@@ -24,77 +24,59 @@ class FoodMenuFragment : BaseFragment<FragmentFoodMenuBinding>(FragmentFoodMenuB
         super.onViewCreated(view, savedInstanceState)
 
         val categoryItemList: MutableList<HorizontalModel> = ArrayList()
-        categoryItemList.add(HorizontalModel(1, R.drawable.tree))
-        categoryItemList.add(HorizontalModel(1, R.drawable.lion))
-        categoryItemList.add(HorizontalModel(1, R.drawable.city))
-        categoryItemList.add(HorizontalModel(1, R.drawable.france))
-        categoryItemList.add(HorizontalModel(1, R.drawable.jumping))
+        categoryItemList.add(HorizontalModel(R.drawable.food1, "Toronto Restaurant"))
+        categoryItemList.add(HorizontalModel( R.drawable.food2, "Magic Dessert"))
+        categoryItemList.add(HorizontalModel(R.drawable.food3, "Newbie Tie"))
+        categoryItemList.add(HorizontalModel(R.drawable.food4, "Lavash"))
 
-        val categoryItemList2: MutableList<HorizontalModel> = ArrayList()
-        categoryItemList2.add(HorizontalModel(1, R.drawable.france))
-        categoryItemList2.add(HorizontalModel(1, R.drawable.jumping))
-        categoryItemList2.add(HorizontalModel(1, R.drawable.city))
-        categoryItemList2.add(HorizontalModel(1, R.drawable.tree))
-        categoryItemList2.add(HorizontalModel(1, R.drawable.lion))
-
-        val categoryItemList3: MutableList<HorizontalModel> = ArrayList()
-        categoryItemList3.add(HorizontalModel(1, R.drawable.lion))
-        categoryItemList3.add(HorizontalModel(1, R.drawable.jumping))
-        categoryItemList3.add(HorizontalModel(1, R.drawable.city))
-        categoryItemList3.add(HorizontalModel(1, R.drawable.france))
-        categoryItemList3.add(HorizontalModel(1, R.drawable.jumping))
-
-        val categoryItemList4: MutableList<HorizontalModel> = ArrayList()
-        categoryItemList4.add(HorizontalModel(1, R.drawable.city))
-        categoryItemList4.add(HorizontalModel(1, R.drawable.france))
-        categoryItemList4.add(HorizontalModel(1, R.drawable.tree))
-        categoryItemList4.add(HorizontalModel(1, R.drawable.france))
-        categoryItemList4.add(HorizontalModel(1, R.drawable.jumping))
-
-        val categoryItemList5: MutableList<HorizontalModel> = ArrayList()
-        categoryItemList5.add(HorizontalModel(1, R.drawable.jumping))
-        categoryItemList5.add(HorizontalModel(1, R.drawable.france))
-        categoryItemList5.add(HorizontalModel(1, R.drawable.city))
-        categoryItemList5.add(HorizontalModel(1, R.drawable.france))
-        categoryItemList5.add(HorizontalModel(1, R.drawable.jumping))
-
-        val categoryItemList6: MutableList<HorizontalModel> = ArrayList()
-        categoryItemList6.add(HorizontalModel(1, R.drawable.city))
-        categoryItemList6.add(HorizontalModel(1, R.drawable.lion))
-        categoryItemList6.add(HorizontalModel(1, R.drawable.jumping))
-        categoryItemList6.add(HorizontalModel(1, R.drawable.france))
-        categoryItemList6.add(HorizontalModel(1, R.drawable.france))
-
-        val categoryItemList7: MutableList<HorizontalModel> = ArrayList()
-        categoryItemList7.add(HorizontalModel(1, R.drawable.tree))
-        categoryItemList7.add(HorizontalModel(1, R.drawable.lion))
-        categoryItemList7.add(HorizontalModel(1, R.drawable.city))
-        categoryItemList7.add(HorizontalModel(1, R.drawable.france))
-        categoryItemList7.add(HorizontalModel(1, R.drawable.jumping))
+//        val categoryItemList2: MutableList<HorizontalModel> = ArrayList()
+//        categoryItemList2.add(HorizontalModel(1, R.drawable.food1, "Toronto Restaurant"))
+//        categoryItemList2.add(HorizontalModel(1, R.drawable.food2, "Magic Dessert"))
+//        categoryItemList2.add(HorizontalModel(1, R.drawable.food3, "Newbie Tie"))
+//        categoryItemList2.add(HorizontalModel(1, R.drawable.food4, "Lavash"))
+//
+//        val categoryItemList3: MutableList<HorizontalModel> = ArrayList()
+//        categoryItemList3.add(HorizontalModel(1, R.drawable.food1, "Toronto Restaurant"))
+//        categoryItemList3.add(HorizontalModel(1, R.drawable.food2, "Magic Dessert"))
+//        categoryItemList3.add(HorizontalModel(1, R.drawable.food3, "Newbie Tie"))
+//        categoryItemList3.add(HorizontalModel(1, R.drawable.food4, "Lavash"))
+//
+//        val categoryItemList4: MutableList<HorizontalModel> = ArrayList()
+//        categoryItemList4.add(HorizontalModel(1, R.drawable.food1, "Toronto Restaurant"))
+//        categoryItemList4.add(HorizontalModel(1, R.drawable.food2, "Magic Dessert"))
+//        categoryItemList4.add(HorizontalModel(1, R.drawable.food3, "Newbie Tie"))
+//        categoryItemList4.add(HorizontalModel(1, R.drawable.food4, "Lavash"))
+//
+//        val categoryItemList5: MutableList<HorizontalModel> = ArrayList()
+//        categoryItemList5.add(HorizontalModel(1, R.drawable.food1, "Toronto Restaurant"))
+//        categoryItemList5.add(HorizontalModel(1, R.drawable.food2, "Magic Dessert"))
+//        categoryItemList5.add(HorizontalModel(1, R.drawable.food3, "Newbie Tie"))
+//        categoryItemList5.add(HorizontalModel(1, R.drawable.food4, "Lavash"))
+//
+//        val categoryItemList6: MutableList<HorizontalModel> = ArrayList()
+//        categoryItemList6.add(HorizontalModel(1, R.drawable.food1, "Toronto Restaurant"))
+//        categoryItemList6.add(HorizontalModel(1, R.drawable.food2, "Magic Dessert"))
+//        categoryItemList6.add(HorizontalModel(1, R.drawable.food3, "Newbie Tie"))
+//        categoryItemList6.add(HorizontalModel(1, R.drawable.food4, "Lavash"))
+//
+//        val categoryItemList7: MutableList<HorizontalModel> = ArrayList()
+//        categoryItemList7.add(HorizontalModel(1, R.drawable.food1, "Toronto Restaurant"))
+//        categoryItemList7.add(HorizontalModel(1, R.drawable.food2, "Magic Dessert"))
+//        categoryItemList7.add(HorizontalModel(1, R.drawable.food3, "Newbie Tie"))
+//        categoryItemList7.add(HorizontalModel(1, R.drawable.food4, "Lavash"))
 
         val verticalCategory: MutableList<VerticalModel> = ArrayList()
         verticalCategory.add(VerticalModel("Feature", categoryItemList))
-        verticalCategory.add(VerticalModel("Home", categoryItemList2))
-        verticalCategory.add(VerticalModel("AWAY", categoryItemList3))
-        verticalCategory.add(VerticalModel("Go for it", categoryItemList4))
-        verticalCategory.add(VerticalModel("Take action", categoryItemList5))
-        verticalCategory.add(VerticalModel("Right now", categoryItemList6))
-        verticalCategory.add(VerticalModel("Finished RV", categoryItemList7))
+//        verticalCategory.add(VerticalModel("Home", categoryItemList2))
+//        verticalCategory.add(VerticalModel("AWAY", categoryItemList3))
+//        verticalCategory.add(VerticalModel("Go for it", categoryItemList4))
+//        verticalCategory.add(VerticalModel("Take action", categoryItemList5))
+//        verticalCategory.add(VerticalModel("Right now", categoryItemList6))
+//        verticalCategory.add(VerticalModel("Finished RV", categoryItemList7))
 
         setMainCategoryRecycler(verticalCategory)
 
     }
-
-//    override fun onCreateView(
-//        inflater: LayoutInflater, container: ViewGroup?,
-//        savedInstanceState: Bundle?
-//    ): View? {
-//        val view = inflater.inflate(R.layout.fragment_food_menu, container, false)
-//
-//
-//
-//        return view
-//    }
 
     private fun setMainCategoryRecycler(everyCategory: List<VerticalModel>) {
         mainCategoryRecycler = binding.mainRecycler
