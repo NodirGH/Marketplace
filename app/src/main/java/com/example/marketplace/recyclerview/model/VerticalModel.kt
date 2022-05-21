@@ -1,3 +1,3 @@
 package com.example.marketplace.recyclerview.model
 
-class VerticalModel(var title: String, var items: List<HorizontalModel>)
+class VerticalModel(var categoryTitle: String, var categoryItem: List<HorizontalModel>)

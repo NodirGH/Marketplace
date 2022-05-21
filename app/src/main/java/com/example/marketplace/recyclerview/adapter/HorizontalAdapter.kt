@@ -12,12 +12,12 @@ import com.example.marketplace.recyclerview.model.HorizontalModel
 
 class HorizontalAdapter(
     private val context: Context,
-    private val category: List<HorizontalModel>
+    private val categoryItem: List<HorizontalModel>
 ) : RecyclerView.Adapter<HorizontalAdapter.HorizontalViewHolder>() {
 
     class HorizontalViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        var itemImage: ImageView = itemView.findViewById(R.id.ivFoodPicture)
-        var nameOfFood: TextView = itemView.findViewById(R.id.tvFoodName)
+        var horizontalFoodPicture: ImageView = itemView.findViewById(R.id.ivHorizontalFoodPicture)
+        var horizontalFoodName: TextView = itemView.findViewById(R.id.tvHorizontalFoodName)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): HorizontalViewHolder {
@@ -29,13 +29,13 @@ class HorizontalAdapter(
 
     override fun onBindViewHolder(holder: HorizontalViewHolder, position: Int) {
         holder.apply {
-            itemImage.setImageResource(category[position].images)
-            nameOfFood.text = category[position].foodName
+            holder.horizontalFoodPicture.setImageResource(categoryItem[position].horizontalPicture)
+            holder.horizontalFoodName.text = categoryItem[position].foodName
         }
 
     }
 
     override fun getItemCount(): Int {
-        return category.size
+        return categoryItem.size
     }
 }
