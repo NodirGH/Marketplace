@@ -1,3 +1,5 @@
 package com.example.marketplace.recyclerview.model
 
-//class MainModel(var order: Int)
+import androidx.recyclerview.widget.RecyclerView
+
+class MainModel(var orderRV: RecyclerView)
