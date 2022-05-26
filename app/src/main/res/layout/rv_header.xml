@@ -4,12 +4,38 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
+    <TextView
+        android:id="@+id/tvTitleRowItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/font_sf_pro_bold"
+        android:text="rowTitle"
+        android:textColor="@color/black_333333"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_margin="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View all >"
+        android:backgroundTint="#00FFFFFF"
+        app:layout_constraintTop_toTopOf="@id/tvTitleRowItem"
+        app:layout_constraintBottom_toBottomOf="@id/tvTitleRowItem"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="16dp"
+        android:textColor="@color/black"
+        android:textAllCaps="false"/>
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvHeader"
         android:layout_width="0dp"
         android:layout_height="260dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/tvTitleRowItem" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
